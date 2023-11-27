@@ -1,0 +1,21 @@
+import numpy as np
+
+adim = 0
+limit_alt = 0
+limit_ust = 100
+
+tutulan_sayi = np.random.randint(0,100)
+tahmin = 50
+while True:
+    if tutulan_sayi == tahmin:
+        break
+    elif tahmin > tutulan_sayi:
+        adim +=1
+        tahmin = np.random.randint(limit_alt,limit_ust)
+        print("cik")
+    else:
+        adim+=1
+        tahmin = np.random.randint(limit_alt,limit_ust)
+        print("in")
+
+print("Sayi: ", tahmin,"Tutulan: ",tutulan_sayi, adim," adımda bulundu")
